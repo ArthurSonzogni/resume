@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  --side-bg-color: DarkSlategrey;
+  --side-text-color: white;
+  --header-bg-color: color-mix(var(--side-bg-color) 50%,
+      white 50%);
+
+}
+
+/* General Styling */
+html {
+  font-size: 12pt;
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+header {
+  transition: all 0.2s;
+  display: grid;
+  grid-template-columns: max-content max-content auto;
+  grid-template-areas:
+    "name about photo"
+  ;
+  background-color: var(--header-bg-color);
+}
+
+article {
+  transition: all 0.2s;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 20% auto auto;
+  grid-template-areas:
+    "skills work work"
+    "education education community"
+  ;
+}
+
+section {
+  transition: all 0.2s;
+  padding: 20px;
+}
+
+@media print {
+  @page {
+    padding: 0;
+    margin: 0cm;
+    size: A4 portrait;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 3px;
+    box-shadow:
+      0 0 10px rgba(0, 0, 0, 0.1),
+      0 0 40px rgba(0, 0, 0, 0.1),
+      0 0 80px rgba(0, 0, 0, 0.1);
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    border-radius: 3px;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+  transition: all 0.3s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+@media print {
+  a {
+    text-decoration: none;
+  }
+}
+
+a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.description {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0.2rem;
+
+    li {
+      font-size: 1rem;
+    }
+  }
+}
+
+.page-break {
+  page-break-after: always;
+}
