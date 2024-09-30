@@ -8,6 +8,7 @@
     <article>
       <Work/>
       <Education />
+      <OpenSource />
       <Community />
       <Skills />
     </article>

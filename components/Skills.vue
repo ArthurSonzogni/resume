@@ -2,7 +2,15 @@
   <section>
     <h3>Competitions</h3>
     <ul>
-      <li>Ranked 3<sup>rd</sup>. French national computer science contest <a href="https://prologin.org/archives/2013/final/report">Prologin</a></li>
+      <li>
+        <strong>Prologin</strong>
+        <br/>
+        <a href="https://prologin.org/archives/2013/final/report">
+          Ranked 3<sup>rd</sup>.
+        </a>
+        <br/>
+        <em>French national computer science contest.</em>
+      </li>
     </ul>
 
     <h3>Languages</h3>
@@ -75,14 +83,10 @@ section {
     color: var(--side-text-color);
   }
 
-  a {
-    color: var(--side-text-color);
-  }
-
   padding: 0;
   margin: 0;
 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 ul {

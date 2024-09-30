@@ -12,52 +12,52 @@
         {
           title: 'Senior Software Engineer',
           endDate: new Date(),
-          startDate: new Date('2020-07-01')
-        },
-        {
-          title: 'Software Engineer - L4',
-          endDate: new Date('2020-07-02'),
-          startDate: new Date('2018-07-01')
-        },
-        {
-          title: 'Software Engineer - L3',
-          endDate: new Date('2018-07-02'),
           startDate: new Date('2016-07-01')
-        }
+        },
       ]"
       >
 
       <div class="description">
         <p>Contributing to multiple areas of the <Icon name="uil:chrome" /> Chrome browser with a focus on security, web platform security, the multi-process architecture and navigations.</p>
 
-        <strong>Top contributor:</strong>
-        <ul>
+        <strong>Highlights:</strong>
+        <ul class="highlight_list">
           <li>
             <a href="https://chrome-commit-tracker.arthursonzogni.com/repositories?repositories=angle,chromeos,chromium,dawn,devtool-frontend,gn,pdfium,perfetto,swiftshader,v8,webrtc&what=per_contributor&grouping=yearly&display=someone_rank&kind=both&percentile=0.7071&individual=300&developers=arthursonzogni&min_contributions=0">
               47 most active contributor
-            </a>
-            (Top 1.55%) . Out of ~1900 Googlers + 500 external contributors.
+            </a> (Top 1.55%).
+            <br/>
+            Out of ~1900 Googlers + 500 external contributors.
+          </li>
+
+          <li>Created the <a
+          href="https://chromium.googlesource.com/chromium/src.git/+/main/docs/dangling_ptr.md">DanglingPointerDetector</a>. <br/>I lead the team.
+          </li>
+          <li>Initiated, prototyped, built and shipped <a
+              href="https://developer.chrome.com/blog/back-forward-cache">BackForwardCache</a>
+            feature.
+          </li>
+          <li>Critical refactoring: 
+          <a
+            href="https://docs.google.com/document/d/1jK50LDDHodStsXlTb6k_cFlIBochkaNWcSOI5M-sVLo/edit">BrowserSideNavigation</a>,
+          <a
+            href="https://docs.google.com/document/d/1C2VKkFRSc0kdmqjKan1G4NlNlxWZqE4Wam41FNMgnmA/edit">RenderDocument</a>,
+          <a
+            href="https://bugs.chromium.org/p/chromium/issues/detail?id=705744">NavigationMojoResponse</a>,
+          <a
+            href="https://docs.google.com/document/d/1PechV73KKMF8leh7uTlyGkR32kD5qILvu3ZeG8TYGfk/edit">OutOfBlinkSandbox</a>, etc...
+          </li>
+
+          <li>Web platform launch review, security review</li>
+          <li>Create and specified <a
+            href="https://developer.chrome.com/blog/coep-credentialless-origin-trial">Cross-origin-embedder-policy:
+            credentialless</a> and <a
+                                     href="https://developer.chrome.com/blog/iframe-credentialless">Iframe credentialless</a>
+          </li>
+          <li>Built/Extended or maintained: ContentSecurityPolicy, Sandbox,
+            COOP, COEP, Upgrade-Insecure-Request, etc...
           </li>
         </ul>
-
-
-        <strong>Highlights:</strong>
-        <ul>
-          <li>Created the <a href="https://chromium.googlesource.com/chromium/src.git/+/main/docs/dangling_ptr.md">DanglingPointerDetector</a></li>
-          <li>Initiated <a href="https://developer.chrome.com/blog/back-forward-cache">BackForwardCache</a></li>
-        </ul>
-
-        <strong>Other projects:</strong>
-        <ul style="column-count: 4">
-          <li><a href="https://docs.google.com/document/d/1jK50LDDHodStsXlTb6k_cFlIBochkaNWcSOI5M-sVLo/edit">BrowserSideNavigation</a></li>
-          <li><a href="https://docs.google.com/document/d/1C2VKkFRSc0kdmqjKan1G4NlNlxWZqE4Wam41FNMgnmA/edit">RenderDocument</a></li>
-          <li><a href="https://bugs.chromium.org/p/chromium/issues/detail?id=705744">NavigationMojoResponse</a></li>
-          <li><a href="https://docs.google.com/document/d/1PechV73KKMF8leh7uTlyGkR32kD5qILvu3ZeG8TYGfk/edit">OutOfBlinkSandbox</a></li>
-          <li>Web features:
-            <a href="https://developer.mozilla.org/en-US/docs/Web/Security/IFrame_credentialless">Iframe credentialless</a>,
-            CSP, COOP, COEP, Sandbox, Upgrade-Insecure-Request, etc...</li>
-        </ul>
-
 
         <strong>Blog posts:</strong>
         <ul>
@@ -98,14 +98,13 @@
       >
       <div class="description"> 
         <p>
-          Novitom is a startup specialized in advanced analytical imaging powered
-          by the Grenoble Synchrotron - A particle accelerator that produces X-rays.
-          I develop simulators, 3D viewers, algorithms, and image processing
-          tools:
+          Worked in a Synchrotron, a particle accelerator that produces X-rays.
+          I developed:
         </p>
         <ul>
-          <li> Interactive <strong>3D Viewers</strong> for large 3D images (meshes and volumic raytracing) </li>
-          <li> Fast physical <strong>simulators</strong> (X-ray wave ...) </li>
+          <li> <em>3D visualizer</em> for very large meshes and <em>volumic
+              raytracing</em> </li>
+          <li> Fast physical simulators: X-ray wave with interference, etc... </li>
           <li> High-performance algorithms (HPC) to process very large volumes of data. </li>
           <li> Image processing algorithms. </li>
           <li> Characterization of microscopic structures. </li>
@@ -131,9 +130,12 @@
 
       <div class="description">
         <p>
-          Atos Worldgrid is a company specialized in software for the energy sector. I worked on a project to develop a web application to monitor the energy consumption of a building. The project was developed in Java and Javascript.
+          Created a visual programming tools, similar to scratch, but in 3D
+          using Web technologies.
+          <br/>
+          Used by the energy sector.
         </p>
-      </div>
+    </div>
     </Element>
 
     <div class="columns">
@@ -141,14 +143,13 @@
       company="BugBusters"
       location="Grenoble"
       logo="logo-education-nationale.jpeg"
-      :lang="['C++','Javascript','Java','Python']"
       :content="
       [
-      {
-      title: 'BugBusters',
-      endDate: new Date('2014-07-01'),
-      startDate: new Date('2012-06-01')
-      }
+        {
+          title: 'Repair Student\'s linux computer',
+          endDate: new Date('2014-07-01'),
+          startDate: new Date('2012-06-01')
+        }
       ]"
       >
     </Element>
@@ -186,8 +187,23 @@ section {
 }
 
 .columns > * {
-  width: 45%;
   margin-bottom: 1rem;
+}
+
+strong {
+  font-weight: bold;
+  padding-top: 1rem;
+  display:block;
+}
+
+.highlight_list {
+  column-count: 2;
+  column-gap: 2rem;
+  li {
+    margin-bottom: 0.5rem;
+    break-inside: avoid;
+    line-height: 1.0rem;
+  }
 }
 
 </style>

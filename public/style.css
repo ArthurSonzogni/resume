@@ -3,11 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  --side-bg-color: DarkSlategrey;
-  --side-text-color: white;
-  --header-bg-color: color-mix(var(--side-bg-color) 50%,
-      white 50%);
-
+  --side-bg-color: #f0f0fa;
+  --side-text-color: #111;
 }
 
 /* General Styling */
@@ -40,7 +37,7 @@ header {
   grid-template-areas:
     "name about photo"
   ;
-  background-color: var(--header-bg-color);
+  background-color: white;
 }
 
 article {
@@ -51,6 +48,7 @@ article {
   grid-template-areas:
     "skills work work"
     "education education community"
+    "opensource opensource community"
   ;
 }
 
@@ -91,26 +89,26 @@ section {
 }
 
 a {
-  color: black;
-  text-decoration: underline;
+  text-decoration: none;
+  color: blue;
   transition: all 0.3s;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
+a:visited {
+  color: blue;
+}
+
 @media print {
-  a {
-    text-decoration: none;
-  }
+  a {}
 }
 
 a:hover {
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 3px solid rgba(0, 0, 255, 0.5);
 }
 
 .description {
-  font-size: 0.8rem;
-  line-height: 1rem;
-  color: #333;
+  color: rgba(0, 0, 0, 0.7);
   background-color: rgba(255, 255, 255, 0.5);
 
   ul {

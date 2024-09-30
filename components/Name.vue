@@ -4,12 +4,12 @@
       Arthur Sonzogni
     </h1>
     <h2>
-      Software Engineer
+      Senior Software Engineer
     </h2>
     <Icon name="uil:map-marker" />
     Paris area, France
-    <Icon name="uil:calendar-alt" />
-    {{ new Date().getFullYear() - 1992 }} years old
+    <!--<Icon name="uil:calendar-alt" />-->
+    <!--{{ new Date().getFullYear() - 1992 }} years old-->
 
   </section>
 </template>
