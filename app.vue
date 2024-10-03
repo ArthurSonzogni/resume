@@ -3,7 +3,6 @@
     <header>
       <Name />
       <About />
-      <Photo />
     </header>
     <article>
       <div id="page_1">
