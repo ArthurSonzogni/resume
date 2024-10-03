@@ -76,7 +76,6 @@
 
 section {
   grid-area: skills;
-  background-color: var(--side-bg-color);
   color: var(--side-text-color);
 
   h1, h2, h3 {
@@ -86,14 +85,15 @@ section {
   padding: 0;
   margin: 0;
 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-right: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 ul {
   list-style-type: none;
   padding: 0;
   margin: 1rem;
-  margin-left: 2em;
+  margin-left: 1em;
 }
 
 h3 {
@@ -104,17 +104,17 @@ h3 {
     var(--side-text-color) 20%
   );
   margin: 0;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
   padding-top: 1em;
-  padding-bottom: 1em;
   display:block;
   font-size: 1.2em;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 h3:not(:first-child) {
   margin-top: 1.4rem;
 }
+
 
 
 </style>

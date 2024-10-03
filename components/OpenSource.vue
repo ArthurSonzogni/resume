@@ -1,98 +1,172 @@
 <template>
   <section>
-    <h2>Work Experience </h2>
-
-    <Element
-      company="Game"
-      location="Grenoble"
-      logo="logo-novitom.jpeg"
-      :lang="['C++','Cuda', 'OpenGl']"
-      :content="
-      [
-      {
-      title: 'Research & Development - Software Engineer',
-      endDate: new Date('2016-07-01'),
-      startDate: new Date('2015-08-01')
-      },
-      {
-      title: 'Internship',
-      endDate: new Date('2015-08-01'),
-      startDate: new Date('2015-02-01')
-      }
-      ]"
-      >
-      <div class="description"> 
-        <p>
-          Novitom is a startup specialized in advanced analytical imaging powered
-          by the Grenoble Synchrotron - A particle accelerator that produces X-rays.
-          I develop simulators, 3D viewers, algorithms, and image processing
-          tools:
-        </p>
-        <ul>
-          <li> Interactive <strong>3D Viewers</strong> for large 3D images (meshes and volumic raytracing) </li>
-          <li> Fast physical <strong>simulators</strong> (X-ray wave ...) </li>
-          <li> High-performance algorithms (HPC) to process very large volumes of data. </li>
-          <li> Image processing algorithms. </li>
-          <li> Characterization of microscopic structures. </li>
-        </ul>
-      </div>
-
-    </Element>
-
-    <Element
-      company="Atos Worldgrid"
-      location="Grenoble"
-      logo="logo-atos.jpeg"
-      :lang="['C++','Javascript','Java','Python']"
-      :content="
-      [
-      {
-      title: 'Internship',
-      endDate: new Date('2015-08-01'),
-      startDate: new Date('2015-02-01')
-      }
-      ]"
-      >
-
-      <div class="description">
-        <p>
-          Created a visual programming tools, similar to scratch, but 
-          Atos Worldgrid is a company specialized in software for the energy sector. I worked on a project to develop a web application to monitor the energy consumption of a building. The project was developed in Java and Javascript.
-        </p>
-    </div>
-    </Element>
+    <h2>Side projects</h2>
+    <em>
+    I love building things: 152 repositories on <a href="https://github.com/ArthurSonzogni?tab=repositories">Github</a>.
+    </em>
 
     <div class="columns">
-    <Element
-      company="BugBusters"
-      location="Grenoble"
-      logo="logo-education-nationale.jpeg"
-      :content="
-      [
-      {
-      title: 'BugBusters',
-      endDate: new Date('2014-07-01'),
-      startDate: new Date('2012-06-01')
-      }
-      ]"
-      >
-    </Element>
+      <div class="column">
 
-    <Element
-      company="ESF"
-      location="Méribel"
-      logo="logo-esf-red.svg"
-      :lang="['Skii','Snowboard']"
-      :content="[
-      {
-      title: 'Ski Instructor',
-      endDate: new Date('2013-10-01'),
-      startDate: new Date('2010-10-01')
-      }
-      ]"
-      >
-    </Element>
+        <h3>Neural Networks </h3>
+        <ul>
+          <li>
+            <a href="https://arthursonzogni.com/WebNeural">WebNeural</a> - A deep
+            learning library written from scratch in C++. CPU only. WebAssembly.
+            <a href="https://github.com/ArthurSonzogni/WebNeural">[Github]</a>
+          </li>
 
+          <li>
+            <a href="https://github.com/ArthurSonzogni/neural-webgpu">Neural-webgpu</a>
+            - A deep learning library written from scratch with WebGPU. WebGPU / WGSL.
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="column">
+
+        <h3>Libraries</h3>
+        <ul>
+          <li>
+            <a href="https://github.com/ArthurSonzogni/FTXUI">FTXUI</a> - The most
+            popular modern C++ library for terminal user interfaces.
+            <!--Show the number of stars on Github-->
+            <Icon name="material-symbols:star" />6.9k 
+          </li>
+
+          <li>
+            <a href="https://github.com/ArthurSonzogni/SMK">SMK</a> - A modern C++
+            multimedia library. Written from scratch, compatible with WebAssembly.
+            C++, OpenGL, OpenAL.
+          </li>
+
+          <li>
+            <a href="https://arthursonzogni.com/en/smkflow/">smkflow</a> - A C++
+            node editor library. C++, SMK.
+          </li> 
+        </ul>
+
+      </div>
+      <div class="column">
+
+        <h3>Websites</h3>
+        <ul>
+          <li>
+            <a href="https://chrome-commit-tracker.arthursonzogni.com/">Chrome
+              Commit Tracker</a> - Data visualization of browser engines activity.
+            <em>Nuxt, Vue, D3.js.</em>
+          </li>
+
+          <li>
+            <a href="https://diagon.arthursonzogni.com/">Diagon</a> - Interactive
+            ASCII art diagram generator. C++, WebAssembly, ANTLR.
+            <!--Show the number of stars on Github-->
+            <Icon name="material-symbols:star" /> 1.6k.
+          </li>
+
+          <li>
+            <a href="https://arthursonzogni.com/LightFlowEditor/latest/">LightFlow
+              Editor</a> - A node based editor to create constructive solid
+            geometry. <a href="https://www.youtube.com/watch?v=OTiZlc3ghY4">[Youtube]</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="column">
+
+        <h3>Tools</h3>
+
+        <ul>
+          <li>
+            <a href="https://github.com/ArthurSonzogni/git-tui">Git TUI</a> - A
+            terminal UI for git. C++, FTXUI.
+            <Icon name="material-symbols:star" /> 138.
+          </li>
+
+          <li>
+            <a href="https://arthursonzogni.com/en/json-tui/">JSON TUI</a> - A
+            terminal UI to explore JSON files. C++, FTXUI.
+            <Icon name="material-symbols:star" /> 340.
+          </li>
+
+          <li>
+            <a href="https://arthursonzogni.com/en/rgb-tui/">RGB TUI</a> - A
+            terminal UI to explore RGB colors. <em>C++, FTXUI.</em>
+          </li>
+        </ul>
+
+      </div>
+      <div class="column">
+
+        <h3>Games</h3>
+
+        <ul>
+          <li>
+            <a href="https://arthursonzogni.com/en/Pigami/">Pigami</a> - A
+            3D puzzle game, where a block is rolled on a grid. <em>C++, SMK,
+              WebAssembly, OpenGL.</em>
+          </li>
+
+          <li>
+            <a href="https://arthursonzogni.com/en/InTheCube/">In The Cube</a> - A
+            2D platform game where the player is stuck in a cube. <em>C++, SMK,
+              WebAssembly, OpenGL.</em>
+          </li>
+
+          <li>
+            <a href="https://github.com/ArthurSonzogni/TermBreaker">TermBreaker</a>
+            - A terminal breakout game. <em>C++, FTXUI</em>
+          </li>
+
+          <li>
+            <a href="https://arthursonzogni.com/en/Kasteet/">Kasteet</a> - A puzzle
+            game, based on one of the puzzles type by Professor Layton.
+            <em>C++, SMK, WebAssembly, OpenGL.</em>
+          </li>
+
+          <li>
+            <a href="https://arthursonzogni.com/en/IceMaze/">Ice Maze</a> - A puzzle
+            game where you play a moving block on ice.
+            <em>C++, SMK, WebAssembly, OpenGL.</em>
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="column">
+
+        <h3>School projects</h3>
+
+        <ul>
+          <li>
+            <a href="https://github.com/smealum/SPACECRAFT">SpaceCraft</a> - A
+            minecraft at the scale of the universe.
+            <em>C++, WebAssembly, OpenGL.</em>
+            <br />
+            Written in 3 weeks.
+          </li>
+
+          <li>
+            <a href="#">Java compiler</a> - Written in Java, for a Java subset.
+          </li>
+
+          <li>
+            <a href="#">CPU conception</a> - A 16 bits CPU, written in VHDL. 
+          </li>
+
+          <li>
+            <a href="#">3D Engine</a> - Defered shading, screen space ambient reflection/occlusion, dynamic cube map, shadow map, skeletal animation, ....
+            <em>C++, OpenGL.</em>
+          </li>
+
+          <li>
+            <a href="#">UI library</a> - A CPU rendered UI library.
+            <em>C</em>
+          </li>
+        </ul>
+
+      </div>
     </div>
 
   </section>
@@ -104,31 +178,27 @@ section {
   grid-area: opensource;
 }
 
+li {
+  list-style-type: none;
+  line-height: 1.5em;
+}
+
 .columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
 }
 
-.columns > * {
-  width: 45%;
-  margin-bottom: 1rem;
+.column {
+  padding: 1em 1em 1em 1em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  
 }
 
-strong {
-  font-weight: bold;
-  padding-top: 1rem;
-  display:block;
-}
-
-.highlight_list {
-  column-count: 2;
-  column-gap: 2rem;
-  li {
-    margin-bottom: 0.5rem;
-    break-inside: avoid;
-    line-height: 1.0rem;
-  }
+h2 {
+  display:inline-block;
+  margin-right: 10px;
 }
 
 </style>

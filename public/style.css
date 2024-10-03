@@ -3,8 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  --side-bg-color: #f0f0fa;
-  --side-text-color: #111;
 }
 
 /* General Styling */
@@ -43,18 +41,33 @@ header {
 article {
   transition: all 0.2s;
   background-color: white;
+}
+
+#page_1 {
   display: grid;
-  grid-template-columns: 20% auto auto;
+  grid-template-columns: 20% auto;
   grid-template-areas:
-    "skills work work"
-    "education education community"
-    "opensource opensource community"
+    "skills work"
   ;
+  break-inside: avoid;
+}
+
+#page_2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "education"
+    "opensource"
+  ;
+  break-inside: avoid;
 }
 
 section {
   transition: all 0.2s;
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 @media print {
@@ -120,8 +133,4 @@ a:hover {
       font-size: 1rem;
     }
   }
-}
-
-.page-break {
-  page-break-after: always;
 }

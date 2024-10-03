@@ -6,11 +6,14 @@
       <Photo />
     </header>
     <article>
-      <Work/>
-      <Education />
-      <OpenSource />
-      <Community />
-      <Skills />
+      <div id="page_1">
+        <Work/>
+        <Skills />
+      </div>
+      <div id="page_2">
+        <Education />
+        <OpenSource />
+      </div>
     </article>
   </div>
 </template>

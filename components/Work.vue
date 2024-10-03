@@ -168,7 +168,6 @@
       ]"
       >
     </Element>
-
     </div>
 
   </section>
@@ -178,16 +177,6 @@
 <style scoped>
 section {
   grid-area: work;
-}
-
-.columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.columns > * {
-  margin-bottom: 1rem;
 }
 
 strong {
@@ -204,6 +193,12 @@ strong {
     break-inside: avoid;
     line-height: 1.0rem;
   }
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
 }
 
 </style>

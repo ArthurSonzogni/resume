@@ -64,6 +64,9 @@ const props = defineProps<{
 .main {
   padding-bottom: 20px;
   margin-bottom: 20px;
+}
+
+.main:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
