@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="skills">
     <h3>Competitions</h3>
     <ul>
       <li>
@@ -13,7 +13,7 @@
       </li>
     </ul>
 
-    <h3>Languages</h3>
+    <h3>Programming</h3>
     <ul>
       <li>C++</li>
       <li>C</li>
@@ -23,15 +23,16 @@
       <li>Ocaml</li>
       <li>Ada</li>
       <li>GLSL</li>
+      <li>... and more</li>
     </ul>
 
     <h3>Web</h3>
     <ul>
       <li>Javascript</li>
-      <li>HTML</li>
-      <li>CSS</li>
+      <li>HTML/CSS</li>
       <li>Vuejs</li>
       <li>D3.js</li>
+      <li>... and more</li>
     </ul>
 
     <h3>Software</h3>
@@ -72,51 +73,3 @@
   </section>
 </template>
 
-<style scoped>
-
-section {
-  grid-area: skills;
-  color: var(--side-text-color);
-
-  h1, h2, h3 {
-    color: var(--side-text-color);
-  }
-
-  padding: 0;
-  margin: 0;
-
-  border-right: 0.5px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-  font-size: 0.9em;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 1rem;
-  margin-left: 1em;
-}
-
-h3 {
-  color:red;
-  background-color: color-mix(
-    in hsl, 
-    var(--side-bg-color) 80%,
-    var(--side-text-color) 20%
-  );
-  margin: 0;
-  padding-left: 1em;
-  padding-top: 1em;
-  display:block;
-  font-size: 1.2em;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-h3:not(:first-child) {
-  margin-top: 1.4rem;
-}
-
-
-
-</style>

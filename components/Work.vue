@@ -1,7 +1,5 @@
 <template>
   <section>
-    <h2>Work Experience </h2>
-
     <Element
       company="Google"
       location="Paris"
@@ -152,6 +150,7 @@
       company="BugBusters"
       location="Grenoble"
       logo="logo-education-nationale.jpeg"
+      :lang="['Linux']"
       :content="
       [
         {
@@ -216,10 +215,5 @@ strong {
   }
 }
 
-.columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-}
 
 </style>

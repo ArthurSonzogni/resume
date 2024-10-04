@@ -69,11 +69,6 @@ const props = defineProps<{
   margin-bottom: 0.5rem;
 }
 
-.main:not(:last-child) {
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
-}
-
-
 h3 {
   display: inline;
   margin-right: 10px;

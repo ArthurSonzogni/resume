@@ -1,8 +1,8 @@
 <template>
-  <section>
+  <section id="opensource">
     <h2>Side projects</h2>
     <em>
-    I love building things: 152 repositories on <a href="https://github.com/ArthurSonzogni?tab=repositories">Github</a>.
+    I love building things: 100+ repositories on <a href="https://github.com/ArthurSonzogni?tab=repositories">Github</a>.
     </em>
 
     <div class="columns">
@@ -30,15 +30,15 @@
 
         <ul>
           <li>
-            <a href="https://github.com/ArthurSonzogni/git-tui">Git TUI</a> - A
-            terminal UI for git. C++, FTXUI.
-            <Icon name="material-symbols:star" /> 138.
-          </li>
-
-          <li>
             <a href="https://arthursonzogni.com/en/json-tui/">JSON TUI</a> - A
             terminal UI to explore JSON files. C++, FTXUI.
             <Icon name="material-symbols:star" /> 340.
+          </li>
+
+          <li>
+            <a href="https://github.com/ArthurSonzogni/git-tui">Git TUI</a> - A
+            terminal UI for git. C++, FTXUI.
+            <Icon name="material-symbols:star" /> 138.
           </li>
 
           <li>
@@ -171,35 +171,3 @@
 
   </section>
 </template>
-
-
-<style scoped>
-section {
-  grid-area: opensource;
-  font-size: 0.8rem;
-}
-
-li {
-  list-style-type: none;
-  line-height: 1.1em;
-  padding-bottom: 0.5rem;
-}
-
-.columns {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap:0.5rem;
-}
-
-.column {
-  padding: 1em 1em 1em 1em;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
-}
-
-h2 {
-  display:inline-block;
-  margin-right: 10px;
-}
-
-</style>

@@ -114,6 +114,33 @@ section {
   }
 }
 
+@media screen and (max-width: 650px) {
+
+  html {
+    font-size: 10pt;
+  }
+
+  #page_1 {
+    article {
+      grid-template-columns: auto;
+      grid-template-areas:
+        "work"
+        "skills"
+      ;
+    }
+  }
+
+  #page_2 {
+    article {
+      grid-template-columns: auto;
+      grid-template-areas:
+        "education"
+        "opensource"
+      ;
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     border-radius: 3px;
@@ -147,5 +174,66 @@ a:hover {
     li {
       font-size: 0.8rem;
     }
+  }
+}
+
+#skills {
+  font-size: 0.85em;
+  grid-area: skills;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  h3 {
+    margin: 0;
+    padding-top: 0.5rem;
+    display: block;
+    font-size: 1.2em;
+  }
+
+  h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 0.2em;
+  }
+
+  h3:not(:first-child) {
+    margin-top: 1.1rem;
+  }
+}
+
+
+#opensource {
+  grid-area: opensource;
+  font-size: 0.9rem;
+
+  li {
+    list-style-type: none;
+    line-height: 1.1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+  }
+
+  .column {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  h2 {
+    display: inline-block;
+    margin-right: 10px;
   }
 }
