@@ -26,25 +26,25 @@
       </div>
       <div class="column">
 
-        <h3>Libraries</h3>
+        <h3>Tools</h3>
+
         <ul>
           <li>
-            <a href="https://github.com/ArthurSonzogni/FTXUI">FTXUI</a> - The most
-            popular modern C++ library for terminal user interfaces.
-            <!--Show the number of stars on Github-->
-            <Icon name="material-symbols:star" />6.9k 
+            <a href="https://github.com/ArthurSonzogni/git-tui">Git TUI</a> - A
+            terminal UI for git. C++, FTXUI.
+            <Icon name="material-symbols:star" /> 138.
           </li>
 
           <li>
-            <a href="https://github.com/ArthurSonzogni/SMK">SMK</a> - A modern C++
-            multimedia library. Written from scratch, compatible with WebAssembly.
-            C++, OpenGL, OpenAL.
+            <a href="https://arthursonzogni.com/en/json-tui/">JSON TUI</a> - A
+            terminal UI to explore JSON files. C++, FTXUI.
+            <Icon name="material-symbols:star" /> 340.
           </li>
 
           <li>
-            <a href="https://arthursonzogni.com/en/smkflow/">smkflow</a> - A C++
-            node editor library. C++, SMK.
-          </li> 
+            <a href="https://arthursonzogni.com/en/rgb-tui/">RGB TUI</a> - A
+            terminal UI to explore RGB colors. <em>C++, FTXUI.</em>
+          </li>
         </ul>
 
       </div>
@@ -75,25 +75,25 @@
       </div>
       <div class="column">
 
-        <h3>Tools</h3>
-
+        <h3>Libraries</h3>
         <ul>
           <li>
-            <a href="https://github.com/ArthurSonzogni/git-tui">Git TUI</a> - A
-            terminal UI for git. C++, FTXUI.
-            <Icon name="material-symbols:star" /> 138.
+            <a href="https://github.com/ArthurSonzogni/FTXUI">FTXUI</a> - The most
+            popular modern C++ library for terminal user interfaces.
+            <!--Show the number of stars on Github-->
+            <Icon name="material-symbols:star" />6.9k 
           </li>
 
           <li>
-            <a href="https://arthursonzogni.com/en/json-tui/">JSON TUI</a> - A
-            terminal UI to explore JSON files. C++, FTXUI.
-            <Icon name="material-symbols:star" /> 340.
+            <a href="https://github.com/ArthurSonzogni/SMK">SMK</a> - A modern C++
+            multimedia library. Written from scratch, compatible with WebAssembly.
+            C++, OpenGL, OpenAL.
           </li>
 
           <li>
-            <a href="https://arthursonzogni.com/en/rgb-tui/">RGB TUI</a> - A
-            terminal UI to explore RGB colors. <em>C++, FTXUI.</em>
-          </li>
+            <a href="https://arthursonzogni.com/en/smkflow/">smkflow</a> - A C++
+            node editor library. C++, SMK.
+          </li> 
         </ul>
 
       </div>
@@ -176,24 +176,25 @@
 <style scoped>
 section {
   grid-area: opensource;
+  font-size: 0.8rem;
 }
 
 li {
   list-style-type: none;
-  line-height: 1.5em;
+  line-height: 1.1em;
+  padding-bottom: 0.5rem;
 }
 
 .columns {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 10px;
+  grid-gap:0.5rem;
 }
 
 .column {
   padding: 1em 1em 1em 1em;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  
+  border-radius: 0.5rem;
 }
 
 h2 {

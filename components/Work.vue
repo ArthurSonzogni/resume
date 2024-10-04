@@ -6,7 +6,7 @@
       company="Google"
       location="Paris"
       logo="logo-google.jpeg"
-      :lang="['C++','Magic', 'Java', 'Javascript', 'Python']"
+      :lang="['C++', 'Javascript', 'Java', 'Python']"
       :content="
       [
         {
@@ -20,12 +20,16 @@
       <div class="description">
         <p>Contributing to multiple areas of the <Icon name="uil:chrome" /> Chrome browser with a focus on security, web platform security, the multi-process architecture and navigations.</p>
 
-        <strong>Highlights:</strong>
+        <strong>
+          <Icon name="bi:star" />
+          Highlights:
+        </strong>
         <ul class="highlight_list">
           <li>
-            <a href="https://chrome-commit-tracker.arthursonzogni.com/repositories?repositories=angle,chromeos,chromium,dawn,devtool-frontend,gn,pdfium,perfetto,swiftshader,v8,webrtc&what=per_contributor&grouping=yearly&display=someone_rank&kind=both&percentile=0.7071&individual=300&developers=arthursonzogni&min_contributions=0">
-              47 most active contributor
-            </a> (Top 1.55%).
+            <a
+              href="https://chrome-commit-tracker.arthursonzogni.com/repositories?repositories=chromium&what=per_contributor&grouping=yearly&display=someone_rank&kind=both&percentile=0.7071&individual=300&developers=arthursonzogni&min_contributions=0">
+              39 most active contributor
+            </a> (Top 1.67%).
             <br/>
             Out of ~1900 Googlers + 500 external contributors.
           </li>
@@ -49,17 +53,26 @@
           </li>
 
           <li>Web platform launch review, security review</li>
-          <li>Create and specified <a
-            href="https://developer.chrome.com/blog/coep-credentialless-origin-trial">Cross-origin-embedder-policy:
-            credentialless</a> and <a
+          <li>Specified:
+            <ul class="simple_list">
+              <li><a
+            href="https://developer.chrome.com/blog/coep-credentialless-origin-trial">COEP:
+            credentialless</a>
+              </li>
+              <li><a
                                      href="https://developer.chrome.com/blog/iframe-credentialless">Iframe credentialless</a>
+              </li>
+            </ul>
           </li>
-          <li>Built/Extended or maintained: ContentSecurityPolicy, Sandbox,
+          <li>Improved: ContentSecurityPolicy, iframe Sandbox,
             COOP, COEP, Upgrade-Insecure-Request, etc...
           </li>
         </ul>
 
-        <strong>Blog posts:</strong>
+        <strong>
+          <Icon name="iconoir:post" />
+          Blog posts:
+        </strong>
         <ul>
           <li><a href="https://developer.chrome.com/blog/iframe-credentialless">Iframe credentialless</a></li>
           <li><a
@@ -105,9 +118,8 @@
           <li> <em>3D visualizer</em> for very large meshes and <em>volumic
               raytracing</em> </li>
           <li> Fast physical simulators: X-ray wave with interference, etc... </li>
-          <li> High-performance algorithms (HPC) to process very large volumes of data. </li>
-          <li> Image processing algorithms. </li>
-          <li> Characterization of microscopic structures. </li>
+          <li> High-performance algorithms (HPC) to process very large volumes
+            of data, image processing, microscopic structures characterizations </li>
         </ul>
       </div>
 
@@ -130,10 +142,7 @@
 
       <div class="description">
         <p>
-          Created a visual programming tools, similar to scratch, but in 3D
-          using Web technologies.
-          <br/>
-          Used by the energy sector.
+          Created 3D visual programming tools, similar to scratch. Used by the energy sector.
         </p>
     </div>
     </Element>
@@ -195,10 +204,22 @@ strong {
   }
 }
 
+.simple_list {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  list-style-type: '- ';
+
+  li {
+    margin:0;
+    padding:0;
+    margin-bottom: 0.1rem;
+  }
+}
+
 .columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 1rem;
 }
 
 </style>

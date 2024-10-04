@@ -1,19 +1,21 @@
 <template>
   <div class="container">
-    <header>
-      <Name />
-      <About />
-    </header>
-    <article>
-      <div id="page_1">
+    <div id="page_1">
+      <header>
+        <Name />
+        <About />
+      </header>
+      <article>
         <Work/>
         <Skills />
-      </div>
-      <div id="page_2">
+      </article>
+    </div>
+    <div id="page_2">
+      <article>
         <Education />
         <OpenSource />
-      </div>
-    </article>
+      </article>
+    </div>
   </div>
 </template>
 

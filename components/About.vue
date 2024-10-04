@@ -1,19 +1,11 @@
 <template>
   <section>
-    <Icon name="uil:map-marker" style="float:left; margin-right: 0.2rem;
-    margin-bottom:1rem"/>
-    <p>
-      3 Résidence du Pont de Conflans,</p>
-    <p>78570 Andrésy, France</p>
-
-    <div style="margin-top: 1rem"/>
-
     <ul>
-      <!--Personal Website-->
+      <!--GitHub-->
       <li>
-        <a href="https://arthursonzogni.com">
-        <Icon name="fluent-mdl2:web-environment"/>
-        arthursonzogni.com
+        <a href="https://github.com/ArthurSonzogni">
+          <Icon name="uil:github"/>
+          GitHub
         </a>
       </li>
 
@@ -25,27 +17,21 @@
         </a>
       </li>
 
-      <!--Phone-->
-      <li>
-        <a href="tel:+33613556656">
-          <Icon name="uil:phone" />
-          +33613556656
-        </a>
-      </li>
 
-      <!--GitHub-->
-      <li>
-        <a href="https://github.com/ArthurSonzogni">
-          <Icon name="uil:github"/>
-          GitHub
-        </a>
-      </li>
 
       <!--Twitter-->
       <li>
         <a href="https://twitter.com/ArthurSonzogni">
           <Icon name="uil:twitter" />
           Twitter
+        </a>
+      </li>
+
+      <!--Personal Website-->
+      <li>
+        <a href="https://arthursonzogni.com">
+        <Icon name="fluent-mdl2:web-environment"/>
+        arthursonzogni.com
         </a>
       </li>
 
@@ -57,7 +43,18 @@
         </a>
       </li>
 
+
+      <!--Phone-->
+      <li>
+        <a href="tel:+33613556656">
+          <Icon name="uil:phone" />
+          +33613556656
+        </a>
+      </li>
+
     </ul>
+    <Icon name="uil:map-marker" />
+    Paris area, France
   </section>
 </template>
 
@@ -69,11 +66,14 @@ section {
 }
 
 ul {
-  column-count: 2;
-  column-rule: 1px solid rgba(0, 0, 0, 0.3);
-  column-width: min-content;
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0 1em;
   list-style-type: none;
 }
 
+a {
+  break-inside: avoid;
+}
 
 </style>

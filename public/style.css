@@ -13,67 +13,75 @@ html {
 
 h1 {
   font-size: 2.5rem;
-  margin-bottom: 5px;
+  margin-bottom: 0.1rem;
 }
 
 h2 {
   font-size: 1.8rem;
   color: #444;
-  margin-bottom: 15px;
+  margin-bottom: 0.3rem;
 }
 
 h3 {
   font-size: 1.4rem;
   color: #333;
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
 }
 
 header {
-  transition: all 0.2s;
-  display: grid;
-  grid-template-columns: max-content max-content auto;
-  grid-template-areas:
-    "name about"
-  ;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-article {
-  transition: all 0.2s;
+  display: flex;
+  justify-content: space-between;
 }
 
 #page_1 {
-  display: grid;
-  grid-template-columns: 20% auto;
-  grid-template-areas:
-    "skills work"
-  ;
+
+  article {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+      "skills work"
+    ;
+  }
+
   break-inside: avoid;
+  overflow: hidden;
 }
 
 #page_2 {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas:
-    "education"
-    "opensource"
-  ;
+  article {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "education"
+      "opensource"
+    ;
+    grid-template-rows: 1fr auto;
+  }
+
   break-inside: avoid;
 }
 
 section {
-  transition: all 0.2s;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
 
 @media print {
   @page {
+    size: A4;
+    margin: 0;
     padding: 0;
-    margin: 0cm;
-    size: A4 portrait;
+  }
+
+  html {
+    font-size: 11pt;
+  }
+
+  #lycee {
+    display: none;
   }
 }
 
@@ -83,13 +91,18 @@ section {
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 297mm;
     margin: 20px auto;
+  }
+
+  #page_1,
+  #page_2 {
     border-radius: 3px;
     box-shadow:
       0 0 10px rgba(0, 0, 0, 0.1),
       0 0 40px rgba(0, 0, 0, 0.1),
       0 0 80px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
   }
 
   header {
@@ -118,24 +131,21 @@ a:visited {
   color: blue;
 }
 
-@media print {
-  a {}
-}
-
 a:hover {
   border-bottom: 3px solid rgba(0, 0, 255, 0.5);
 }
 
 .description {
   color: rgba(0, 0, 0, 0.7);
+  font-size: 0.9rem;
 
   ul {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 1rem;
     margin: 0.2rem;
 
     li {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
   }
 }

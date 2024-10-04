@@ -6,6 +6,7 @@ const props = defineProps<{
   title: string;
   endDate: Date;
   startDate: Date;
+  displayDuration?: boolean;
 }>()
 
 const startDateSimple = computed(() => {
@@ -34,7 +35,10 @@ const duration = computed(() => {
       {{ title }}
     </div>
     <div class="date">
-      {{ startDateSimple }} - {{ endDateSimple }} - {{ duration }}
+      {{ startDateSimple }} - {{ endDateSimple }}
+      <span v-if="props.displayDuration">
+        - {{ duration }}
+      </span>
     </div>
   </div>
 </template>

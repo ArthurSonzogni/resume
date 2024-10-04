@@ -38,7 +38,7 @@ const work = [
         :lang="['C', 'C++', 'Ada', 'Javascript','Java','Python']"
         :content="[
         {
-        title: 'Ensimag - Grenoble Institute of Technology',
+        title: 'Ensimag',
         endDate: new Date('2015-07-02'),
         startDate: new Date('2012-07-01')
         }
@@ -81,20 +81,20 @@ const work = [
       </Element>
 
       <Element
-        company="Lycée"
         location="Ugine"
         logo="logo-rene-perrin.png"
+        id="lycee"
         :content="[
-        {
-        title: 'René Perrin',
-        endDate: new Date('2010-07-01'),
-        startDate: new Date('2008-07-01')
-        },
-        {
-        title: 'Ambroise Croizat',
-        endDate: new Date('2008-07-01'),
-        startDate: new Date('2007-07-01')
-        }
+          {
+            title: 'René Perrin',
+            endDate: new Date('2010-07-01'),
+            startDate: new Date('2008-07-01')
+          },
+          {
+            title: 'Ambroise Croizat',
+            endDate: new Date('2008-07-01'),
+            startDate: new Date('2007-07-01')
+          }
         ]"
         >
         <div class="description">

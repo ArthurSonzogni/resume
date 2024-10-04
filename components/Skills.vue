@@ -9,7 +9,7 @@
           Ranked 3<sup>rd</sup>.
         </a>
         <br/>
-        <em>French national computer science contest.</em>
+        <em>French national contest.</em>
       </li>
     </ul>
 
@@ -45,13 +45,13 @@
 
     <h3>Speciality</h3>
     <ul>
-    <li>3D computer graphics</li>
-    <li>Image analysis</li>
-    <li>GPU programming</li>
-    <li>Computer vision</li>
-    <li>Parallel programming</li>
-    <li>Numerical optimisation</li>
-    <li>Statistical inference</li>
+      <li>3D computer graphics</li>
+      <li>Statistical inference</li>
+      <li>Image analysis</li>
+      <li>Computer vision</li>
+      <li>GPU programming</li>
+      <li>Parallel programming</li>
+      <li>Numerical optimization</li>
     </ul>
 
     <h3>Languages</h3>
@@ -87,6 +87,8 @@ section {
 
   border-right: 0.5px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  font-size: 0.9em;
 }
 
 ul {

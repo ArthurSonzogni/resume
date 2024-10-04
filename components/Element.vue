@@ -23,8 +23,10 @@ const props = defineProps<{
       <div class="column">
         <img :src="logo" class="logo" />
         <h3> {{ company }} </h3>
+        <span class="no-break">
         <Icon name="uil:location-point" />
         {{ location }}
+        </span>
         ,
         {{ humanizeDuration(content[0].endDate - content[content.length - 1 ].startDate, { largest: 1 }) }}
 
@@ -36,6 +38,7 @@ const props = defineProps<{
             :title="job.title"
             :startDate="job.startDate"
             :endDate="job.endDate"
+            :displayDuration="content.length > 1"
           />
 
         </div>
@@ -62,12 +65,12 @@ const props = defineProps<{
 <style scoped>
 
 .main {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .main:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
 }
 
 
@@ -77,14 +80,16 @@ h3 {
 }
 
 .logo {
-  width: 64px;
-  height: 64px;
+  width: 4rem;
+  height: 4rem;
   border-radius: 20%;
   margin-right: 10px;
   float: left;
   box-shadow:
-  0 0 10px 10px rgba(255,255,255,0.05),
-  0 4px 1px 1px rgba(0,0,0,0.1);
+    0 0 10px 10px rgba(255,255,255,0.05),
+    0 4px 10px 0px rgba(0,0,0,0.2),
+    0 4px 1px 1px rgba(0,0,0,0.1)
+    ;
 }
 
 .main {
@@ -136,5 +141,8 @@ h3 {
   justify-content: space-between;
 }
 
+.no-break {
+  white-space: nowrap;
+}
 
 </style>
