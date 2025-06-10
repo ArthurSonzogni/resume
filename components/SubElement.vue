@@ -15,11 +15,15 @@ const startDateSimple = computed(() => {
 
 const endDateSimple = computed(() => {
   // If the end date is close to "today", we display "present" instead of the date.
-  if (props.endDate > new Date() && props.endDate - new Date() < 1000 * 60 * 60 * 24 * 30) {
-    return 'Present'
-  }
+  const present = (
+    props.endDate.getFullYear() === new Date().getFullYear() &&
+    props.endDate.getMonth() === new Date().getMonth()
+  );
 
-  return props.endDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
+  return props.endDate.toLocaleDateString('en-US', {
+    month: 'long',
+    year: 'numeric'
+  }) + (present ? ' (present)' : '');
 })
 
 const duration = computed(() => {

@@ -10,14 +10,14 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/icon": "^1.5.1",
-    "humanize-duration": "^3.32.1",
-    "nuxt": "^3.13.0",
-    "prettier": "^3.3.3",
+    "@nuxt/icon": "^1.13.0",
+    "humanize-duration": "^3.33.0",
+    "nuxt": "^3.17.5",
+    "prettier": "^3.5.3",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
-    "sass-embedded": "^1.79.4"
+    "sass-embedded": "^1.89.2"
   }
 }
