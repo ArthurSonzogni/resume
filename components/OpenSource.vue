@@ -1,3 +1,14 @@
+<script setup lang="ts">
+import stars from '~/data/stars.json'
+
+function formatStars(count: number): string {
+  if (count >= 1000) {
+    return (count / 1000).toFixed(1).replace(/\.0$/, '') + 'k';
+  }
+  return count.toString();
+}
+</script>
+
 <template>
   <section id="opensource">
     <h2>Side projects</h2>
@@ -32,13 +43,13 @@
           <li>
             <a href="https://arthursonzogni.com/en/json-tui/">JSON TUI</a> - A
             terminal UI to explore JSON files. C++, FTXUI.
-            <Icon name="material-symbols:star" /> 340.
+            <Icon name="material-symbols:star" /> {{ formatStars(stars['json-tui']) }}.
           </li>
 
           <li>
             <a href="https://github.com/ArthurSonzogni/git-tui">Git TUI</a> - A
             terminal UI for git. C++, FTXUI.
-            <Icon name="material-symbols:star" /> 138.
+            <Icon name="material-symbols:star" /> {{ formatStars(stars['git-tui']) }}.
           </li>
 
           <li>
@@ -62,7 +73,7 @@
             <a href="https://diagon.arthursonzogni.com/">Diagon</a> - Interactive
             ASCII art diagram generator. C++, WebAssembly, ANTLR.
             <!--Show the number of stars on Github-->
-            <Icon name="material-symbols:star" /> 1.6k.
+            <Icon name="material-symbols:star" /> {{ formatStars(stars['Diagon']) }}.
           </li>
 
           <li>
@@ -81,7 +92,7 @@
             <a href="https://github.com/ArthurSonzogni/FTXUI">FTXUI</a> - The most
             popular modern C++ library for terminal user interfaces.
             <!--Show the number of stars on Github-->
-            <Icon name="material-symbols:star" />6.9k 
+            <Icon name="material-symbols:star" />{{ formatStars(stars['FTXUI']) }}
           </li>
 
           <li>
